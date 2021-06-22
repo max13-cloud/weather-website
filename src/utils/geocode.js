@@ -7,7 +7,7 @@ const geocode = (adress, callback) => {
   //request({urlForCord, json: true} , (error, response) => {
   // AND destructuring 
   console.log(urlForCord)
-  request(urlForCord, {json: true, proxy: 'http://proxy-fr-croissy:8080/'} , (error, {body}) => {
+  request(urlForCord, {json: true} , (error, {body}) => {
   //const test = request(urlForCord, { json: true }, (error, { body }) => {
     //console.log(body.features)
     if (error) {
