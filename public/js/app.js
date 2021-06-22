@@ -20,9 +20,9 @@ weatherForm.addEventListener('submit', (e) => {
     messOne.textContent = 'Loading'
     messTwo.textContent = ''
 
-    /*if(location !== ""){
+    if(location !== ""){
 
-        fetch('./weather?adress=' + location).then((response) =>{
+        fetch('/weather?adress=' + location).then((response) =>{
         //for localhost
 //fetch('http://127.0.0.1:3000/weather?adress=' + location).then((response) =>{        
             //console.log(response)
@@ -41,7 +41,7 @@ weatherForm.addEventListener('submit', (e) => {
                 
             })
         })
-    }*/
+    }
 
     console.log(location)
 })
